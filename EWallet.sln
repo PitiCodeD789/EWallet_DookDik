@@ -25,13 +25,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWallet.Mobile.iOS", "src\P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.Mobile", "src\Presentation\Mobile\EWallet.Mobile\EWallet.Mobile\EWallet.Mobile.csproj", "{00CC1D75-F92B-4132-B29B-CD3A30BF7137}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.DataAcess", "Infrastructure\EWallet.DataAcess\EWallet.DataAcess.csproj", "{C8EC8646-5D24-4477-8B1A-9063E2A751BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.DataAcess", "src\Infrastructure\EWallet.DataAcess\EWallet.DataAcess.csproj", "{C8EC8646-5D24-4477-8B1A-9063E2A751BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.Domain", "Infrastructure\EWallet.Domain\EWallet.Domain.csproj", "{41D6C726-87BD-4B08-83AA-345ABC8053FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.Domain", "src\Infrastructure\EWallet.Domain\EWallet.Domain.csproj", "{41D6C726-87BD-4B08-83AA-345ABC8053FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.Core", "Core\EWallet.Core\EWallet.Core.csproj", "{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.Core", "src\Core\EWallet.Core\EWallet.Core.csproj", "{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.Core.Models", "Core\EWallet.Core.Models\EWallet.Core.Models.csproj", "{055239CF-8EE6-4B16-A511-71574C3A581D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.Core.Models", "src\Core\EWallet.Core.Models\EWallet.Core.Models.csproj", "{055239CF-8EE6-4B16-A511-71574C3A581D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWallet.Services", "src\Presentation\Mobile\EWallet.Services\EWallet.Services.csproj", "{85D2B055-7972-429F-A236-438315EDCED8}"
 EndProject

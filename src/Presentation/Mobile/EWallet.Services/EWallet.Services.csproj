@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Core\EWallet.Core.Models\EWallet.Core.Models.csproj" />
+    <ProjectReference Include="..\..\..\Core\EWallet.Core.Models\EWallet.Core.Models.csproj" />
   </ItemGroup>
 
 </Project>
