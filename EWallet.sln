@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWallet.DataAcess", "Infras
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWallet.Domain", "Infrastructure\EWallet.Domain\EWallet.Domain.csproj", "{41D6C726-87BD-4B08-83AA-345ABC8053FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWallet.Core", "Core\EWallet.Core\EWallet.Core.csproj", "{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,18 @@ Global
 		{41D6C726-87BD-4B08-83AA-345ABC8053FE}.Release|iPhone.Build.0 = Release|Any CPU
 		{41D6C726-87BD-4B08-83AA-345ABC8053FE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{41D6C726-87BD-4B08-83AA-345ABC8053FE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Release|iPhone.Build.0 = Release|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +145,7 @@ Global
 		{00CC1D75-F92B-4132-B29B-CD3A30BF7137} = {595FEBB6-A195-44B0-805F-FBC660865A05}
 		{C8EC8646-5D24-4477-8B1A-9063E2A751BB} = {309A452A-85FD-40F1-BD78-AF733E63131B}
 		{41D6C726-87BD-4B08-83AA-345ABC8053FE} = {309A452A-85FD-40F1-BD78-AF733E63131B}
+		{8D8F03AD-5D8C-4BC0-BCE5-FBB79A654A05} = {D47CA894-F477-4916-BFA5-1E5936030C5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {362BABEE-83AE-45EE-A45A-34160109F5E6}
