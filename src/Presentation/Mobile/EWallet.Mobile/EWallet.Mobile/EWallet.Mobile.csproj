@@ -38,6 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\EWallet.Services\EWallet.Services.csproj" />
+    <ProjectReference Include="..\..\EWallet.Services\EWallet.Mobile.Services.csproj" />
   </ItemGroup>
 </Project>

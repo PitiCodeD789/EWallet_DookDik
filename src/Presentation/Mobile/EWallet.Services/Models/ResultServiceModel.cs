@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EWallet.Services.Models
+namespace EWallet.Mobile.Services.Models
 {
     public class ResultServiceModel<T> where T : class
     {

@@ -1,4 +1,4 @@
-﻿using EWallet.Services.Models;
+﻿using EWallet.Mobile.Services.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EWallet.Services.Services
+namespace EWallet.Mobile.Services.Services
 {
     public class BaseService
     {

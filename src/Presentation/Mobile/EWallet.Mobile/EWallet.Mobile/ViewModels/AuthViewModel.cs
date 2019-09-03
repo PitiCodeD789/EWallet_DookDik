@@ -1,5 +1,5 @@
-﻿using EWallet.Services.Interfaces;
-using EWallet.Services.Services;
+﻿using EWallet.Mobile.Services.Interfaces;
+using EWallet.Mobile.Services.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,8 +11,6 @@ namespace EWallet.Mobile.ViewModels
 {
     public class AuthViewModel : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-
         private readonly IAuthService _authService;
 
         public AuthViewModel()
@@ -21,6 +19,11 @@ namespace EWallet.Mobile.ViewModels
 
             SignInCommand = new Command(SignIn);
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public string Email { get; set; }
+
+        public Command SignInCommand { get; set; }
 
         private async void SignIn()
         {
@@ -43,10 +46,5 @@ namespace EWallet.Mobile.ViewModels
                 await Application.Current.MainPage.DisplayAlert("", "Please Enter email.", "Ok");
             }
         }
-
-        public string Email { get; set; }
-
-        public Command  SignInCommand { get; set; }
-
     }
 }

@@ -1,11 +1,11 @@
 ﻿using EWallet.Core.Models.MobileAndApi.Auth;
-using EWallet.Services.Models;
+using EWallet.Mobile.Services.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EWallet.Services.Interfaces
+namespace EWallet.Mobile.Services.Interfaces
 {
     public interface IAuthService
     {
