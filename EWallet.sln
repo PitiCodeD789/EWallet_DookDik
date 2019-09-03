@@ -3,9 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7E3087F7-0651-4E3E-9CB0-3C8B42D734CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{A18E55BA-1677-4566-AF2A-AB4118603332}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{760A0EF5-22FC-4FEA-8858-68B4F22BDBE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{595FEBB6-A195-44B0-805F-FBC660865A05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{13AA6062-72BA-4708-BEA5-B1D7A348B08E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWallet.Api", "src\Presentation\Api\EWallet.Api\EWallet.Api.csproj", "{2E8AC2BB-B779-4FC3-B62C-662779618B79}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E8AC2BB-B779-4FC3-B62C-662779618B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8AC2BB-B779-4FC3-B62C-662779618B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8AC2BB-B779-4FC3-B62C-662779618B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8AC2BB-B779-4FC3-B62C-662779618B79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{760A0EF5-22FC-4FEA-8858-68B4F22BDBE4} = {7E3087F7-0651-4E3E-9CB0-3C8B42D734CA}
+		{595FEBB6-A195-44B0-805F-FBC660865A05} = {760A0EF5-22FC-4FEA-8858-68B4F22BDBE4}
+		{13AA6062-72BA-4708-BEA5-B1D7A348B08E} = {760A0EF5-22FC-4FEA-8858-68B4F22BDBE4}
+		{2E8AC2BB-B779-4FC3-B62C-662779618B79} = {13AA6062-72BA-4708-BEA5-B1D7A348B08E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {362BABEE-83AE-45EE-A45A-34160109F5E6}
