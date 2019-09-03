@@ -10,7 +10,7 @@ namespace EWallet.Mobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Views.SignInPage());
         }
 
         protected override void OnStart()
