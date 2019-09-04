@@ -7,5 +7,6 @@ namespace EWallet.Domain.Interfaces
     public interface IAuthService
     {
         bool ExistingEmail(string email);
+        bool SaveOtp(string email, string refNumber, string otpNumber);
     }
 }

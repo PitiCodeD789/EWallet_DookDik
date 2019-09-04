@@ -7,5 +7,6 @@ namespace EWallet.Core.Models.MobileAndApi.Auth
     public class CheckEmailResult
     {
         public bool IsExistEmail { get; set; }
+        public string RefNumber { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace EWallet.DataAcess.Contexts
     public class EWalletContext : DbContext
     {
         public DbSet<UserEntity> User { get; set; }
+        public DbSet<OtpEntity> Otp { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -21,6 +22,7 @@ namespace EWallet.DataAcess.Contexts
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new OtpConfiguration());
         }
 
     }

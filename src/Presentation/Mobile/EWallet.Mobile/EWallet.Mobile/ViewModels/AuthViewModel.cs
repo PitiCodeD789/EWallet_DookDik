@@ -37,7 +37,7 @@ namespace EWallet.Mobile.ViewModels
                 }
                 else
                 {
-                    //valid or invalid
+                    // TODO: valid or invalid
                     await Application.Current.MainPage.Navigation.PushAsync(new Page());
                 }
             }

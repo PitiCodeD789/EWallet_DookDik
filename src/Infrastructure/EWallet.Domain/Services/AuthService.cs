@@ -10,9 +10,14 @@ namespace EWallet.Domain.Services
     public class AuthService : IAuthService
     {
         private readonly IUserRepository _userRepository;
-        public AuthService(IUserRepository userRepository)
+        private readonly IOtpRepository _otpRepository;
+
+
+        public AuthService(IUserRepository userRepository, 
+                            IOtpRepository otpRepository)
         {
             _userRepository = userRepository;
+            _otpRepository = otpRepository;
         }
 
         public bool ExistingEmail(string email)
@@ -22,6 +27,34 @@ namespace EWallet.Domain.Services
             if (user == null)
                 return false;
             return true;
+        }
+
+        public bool SaveOtp(string email, string refNumber, string otpNumber)
+        {
+            //
+            OtpEntity otp = _otpRepository.GetOtpByEmail(email);
+
+            if (otp == null)
+            {
+                otp = new OtpEntity()
+                {
+                    Email = email,
+                    Reference = refNumber,
+                    Otp = otpNumber,
+                };
+
+                return _otpRepository.AddOtp(otp);
+            }
+            else
+            {
+                otp.Otp = otpNumber;
+                otp.Reference = refNumber;
+
+                return _otpRepository.UpdateOtp(otp);
+            }
+
+
+            
         }
     }
 }

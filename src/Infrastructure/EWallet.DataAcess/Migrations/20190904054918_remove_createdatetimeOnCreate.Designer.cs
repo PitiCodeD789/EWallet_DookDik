@@ -4,14 +4,16 @@ using EWallet.DataAcess.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EWallet.DataAcess.Migrations
 {
     [DbContext(typeof(EWalletContext))]
-    partial class EWalletContextModelSnapshot : ModelSnapshot
+    [Migration("20190904054918_remove_createdatetimeOnCreate")]
+    partial class remove_createdatetimeOnCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

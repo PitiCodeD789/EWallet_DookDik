@@ -4,14 +4,16 @@ using EWallet.DataAcess.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EWallet.DataAcess.Migrations
 {
     [DbContext(typeof(EWalletContext))]
-    partial class EWalletContextModelSnapshot : ModelSnapshot
+    [Migration("20190904044915_otp_tb")]
+    partial class otp_tb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -19,50 +21,21 @@ namespace EWallet.DataAcess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("EWallet.DataAcess.Entities.OtpEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreateDateTime");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(100);
-
-                    b.Property<string>("Otp")
-                        .HasMaxLength(10);
-
-                    b.Property<string>("Reference")
-                        .HasMaxLength(10);
-
-                    b.Property<DateTime>("UpdateDateTime");
-
-                    b.HasKey("Id");
-
-                    b.HasAlternateKey("Email");
-
-                    b.ToTable("Otp");
-                });
-
             modelBuilder.Entity("EWallet.DataAcess.Entities.UserEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("CreateDateTime");
+                    b.Property<DateTime>("CreateDateTime")
+                        .ValueGeneratedOnAddOrUpdate();
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasMaxLength(100);
 
                     b.Property<DateTime>("UpdateDateTime");
 
                     b.HasKey("Id");
-
-                    b.HasAlternateKey("Email");
 
                     b.ToTable("User");
                 });
