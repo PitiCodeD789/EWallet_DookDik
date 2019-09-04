@@ -50,7 +50,9 @@ namespace EWallet.Domain.Services
                 otp.Otp = otpNumber;
                 otp.Reference = refNumber;
 
-                return _otpRepository.UpdateOtp(otp);
+                object obj = new { otp.Otp, otp.Reference, UpdateDateTime = DateTime.UtcNow };
+
+                return _otpRepository.UpdateOtp(obj, otp.Id);
             }
 
 

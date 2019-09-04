@@ -9,6 +9,6 @@ namespace EWallet.DataAcess.Interfaces
     {
         bool AddOtp(OtpEntity entity);
         OtpEntity GetOtpByEmail(string email);
-        bool UpdateOtp(OtpEntity otp);
+        bool UpdateOtp(object otp, int id);
     }
 }

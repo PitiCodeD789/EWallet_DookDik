@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace EWallet.DataAcess.Repositories
 {
@@ -14,6 +15,7 @@ namespace EWallet.DataAcess.Repositories
         public OtpRepository(EWalletContext context)
         {
             _context = context;
+            _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         public bool AddOtp(OtpEntity entity)
@@ -41,17 +43,16 @@ namespace EWallet.DataAcess.Repositories
             return _context.Otp.FirstOrDefault(x => x.Email == email);
         }
 
-        public bool UpdateOtp(OtpEntity otp)
+        public bool UpdateOtp(object otp, int id)
         {
 
             try
             {
-                OtpEntity entity = _context.Otp.Find(otp.Id);
+                OtpEntity entity = _context.Otp.AsTracking().FirstOrDefault(x => x.Id == id);
 
-                entity.Otp = otp.Otp;
-                entity.Reference = otp.Reference;
-                entity.UpdateDateTime = DateTime.UtcNow;
+                _context.Entry(entity).CurrentValues.SetValues(otp);
                 _context.SaveChanges();
+
                 return true;
             }
             catch (Exception ex)
